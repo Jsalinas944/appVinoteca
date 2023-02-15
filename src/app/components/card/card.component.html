@@ -1,0 +1,13 @@
+<div class="row mt-4 ms-4">
+  <div class="col-md-6 col-sm-12 col-lg-4 py-3" *ngFor="let tarjeta of tarjetas" >
+      <div class="tarjetas shadow"  *ngIf="tarjeta.disponibilidad" style="width: 24rem;">
+        <!-- property binding style="width: 18rem;"-->
+          <img [src]="tarjeta.url" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> {{tarjeta.nombre}} </h5>
+            <p class="card-text"> {{tarjeta.precio}} </p>
+            <a href="#" class="btn btn-primary mb-2">Comprar</a>
+          </div>
+        </div>
+  </div>
+</div>

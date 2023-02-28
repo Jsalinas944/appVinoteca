@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CreateProductoComponent } from './components/create-producto/create-producto.component';
+import { ListProductosComponent } from './components/list-productos/list-productos.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -11,7 +12,9 @@ const routes: Routes = [
   {path:"productos",component:ProductosComponent},
   {path:"contactos",component:ContactosComponent},
   {path:"admin", component:AdminComponent},
+  {path:"list-productos",component:ListProductosComponent},
   {path:"create-producto",component:CreateProductoComponent},
+  {path:"editProducto/:id",component:CreateProductoComponent},
   {path:"**", redirectTo:"inicio", pathMatch:"full"}
 ];
 
